@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Henry Cordes</title>
     <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
 </head>
 
 <body>
@@ -121,14 +122,27 @@
         </section>
         <section id="projects">
             <h2>My Work</h2>
-            <p>
-                Here are some of my recent projects:
-            </p>
-            <ul>
-                <li><a href="https://github.com/hcord/portfolio">Portfolio Website</a></li>
-                <li><a href="https://github.com/hcord/todo-app">Todo App</a></li>
-                <li><a href="https://github.com/hcord/weather-app">Weather App</a></li>
+            <div class="project-buttons">
+                <button id="myButton">All</button>
+                <button id="myButton">Web Projects</button>
+                <button id="myButton">Mobile Projects</button>
+                <button id="myButton">Misc</button>
+            </div>
+
+            <ul class="web-projects">
+                <li>Portfolio Website</li>
+                <li>Madness AI -- Coming Soon</li>
+                <li>March Madness Bracket Optimizer</li>
             </ul>
+            <ul class="mobile-projects">
+                <li>Coming Soon</li>
+            </ul>
+            <ul class="misc-projects">
+                <li>Arduino Climbing Wall Model</li>
+                <li>Arduino RC Car</li>
+                <li>Tic-Tac-Toe Game</li>
+            </ul>
+
         </section>
     </main>
     <footer>

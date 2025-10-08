@@ -17,8 +17,7 @@ body #hero {
     font-family: 'Helvetica Neue', Arial, sans-serif;
     font-size: 150%;
     background: linear-gradient(135deg, #16213e 0%, #0f3460 20%, #533483 40%, #7209b7 60%, #a663cc 80%, #4facfe 100%);
-    background-size: 400% 400%;
-    min-height: 100vh;
+    min-height: 100vh; 
 }
 
 /* Header */
@@ -64,7 +63,6 @@ header div h2:hover {
     transform: translateY(-5px);
     transition: ease-in-out .1s;
     color: #4facfe;
-    text-shadow: 0 0 20px rgba(79, 172, 254, 0.6);
 }
 
 header h1 {
@@ -73,10 +71,9 @@ header h1 {
     text-align: center;
     font-weight: 600;
     text-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
-    color: red;
 }
 
-/* Hero */
+/* Hero section */
 #hero {
     background: rgba(255, 255, 255, 0.05);
     padding: 20px;
@@ -222,6 +219,7 @@ header h1 {
 #skills h2 {
     font-size: 42px;
     color: #515151;
+
     text-align: left;
     margin-bottom: 20px;
 }
@@ -264,6 +262,39 @@ header h1 {
     margin: 10px;
 }
 
+/* Projects */
+
+#projects {
+    padding: 20px;
+}
+
+#projects h2 {
+    font-size: 54px;
+    color: #515151;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+#projects .project-buttons {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+#projects #myButton {
+    background-color: rgba(126, 126, 126, 0.214);
+    border-radius: 5px;
+    border: none;
+    color: #515151;
+    padding: 5px 10px;
+    margin: 5px;
+    font-size: 16px;
+}
+#projects #myButton:hover {
+    background-color: rgba(126, 126, 126, 0.618);
+}
+
+
 
 /* animations */
 @keyframes blob-morph {
@@ -274,7 +305,7 @@ header h1 {
         box-shadow: 0 0 50px 20px rgba(79, 172, 254, 0.6);
     }
 
-    12.5% {
+    12% {
         border-radius: 30% 60% 70% 40% / 50% 60% 30% 60%;
         box-shadow: 0 0 50px 30px rgba(79, 172, 254, 0.6);
     }
@@ -285,7 +316,7 @@ header h1 {
 
     }
 
-    37.5% {
+    37% {
         border-radius: 40% 40% 60% 60% / 70% 30% 40% 70%;
         box-shadow: 0 0 50px 30px rgba(79, 172, 254, 0.6);
 
@@ -296,7 +327,7 @@ header h1 {
         box-shadow: 0 0 50px 5px rgba(79, 172, 254, 0.6);
     }
 
-    62.5% {
+    62% {
         border-radius: 20% 70% 60% 40% / 60% 50% 30% 60%;
         box-shadow: 0 0 50px 40px rgba(79, 172, 254, 0.6);
     }
@@ -306,7 +337,7 @@ header h1 {
         box-shadow: 0 0 50px 20px rgba(79, 172, 254, 0.6);
     }
 
-    87.5% {
+    87% {
         border-radius: 40% 60% 70% 30% / 60% 40% 70% 30%;
         box-shadow: 0 0 50px 10px rgba(79, 172, 254, 0.6);
     }
@@ -350,8 +381,7 @@ header h1 {
     align-items: center;
 }
 
-.letterh,
-.letterc {
+.letterh, .letterc {
     font-size: 16px;
     font-weight: 900;
     color: #333;
@@ -436,7 +466,7 @@ header h1 {
 }
 
 
-/* mobile responsiveness */
+/* responsive */
 @media (max-width: 850px) {
     header {
         flex-direction: column;
