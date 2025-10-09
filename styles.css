@@ -16,8 +16,8 @@ body {
 body #hero {
     font-family: 'Helvetica Neue', Arial, sans-serif;
     font-size: 150%;
-    background: linear-gradient(135deg, #16213e 0%, #0f3460 20%, #533483 40%, #7209b7 60%, #a663cc 80%, #4facfe 100%);
-    min-height: 100vh; 
+    background: linear-gradient(135deg, #16213e 0%, #0f3460 20%, #533483 40%, #7209b7 60%, #995abe 80%, #4facfe 100%);
+    min-height: 100dvh; 
 }
 
 /* Header */
@@ -301,7 +301,6 @@ header h1 {
 }
 .project-card {
     background: rgba(255, 255, 255, 0.1);
-    border-radius: 10px;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
     padding: 20px;
     margin: 10px;
@@ -328,6 +327,13 @@ header h1 {
 .projects span {
     justify-content: center;
     align-items: center;
+}
+
+.coming-soon {
+    display: none;
+    text-align: center;
+    font-size: 24px;
+    padding: 30px;
 }
 
 /* footer */
