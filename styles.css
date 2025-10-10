@@ -17,7 +17,7 @@ body #hero {
     font-family: 'Helvetica Neue', Arial, sans-serif;
     font-size: 150%;
     background: linear-gradient(135deg, #16213e 0%, #0f3460 20%, #533483 40%, #7209b7 60%, #995abe 80%, #4facfe 100%);
-    min-height: 100dvh; 
+    min-height: 100dvh;
 }
 
 /* Header */
@@ -76,9 +76,6 @@ header h1 {
 #hero {
     background: rgba(255, 255, 255, 0.05);
     padding: 20px;
-    box-shadow:
-        0 8px 32px rgba(0, 0, 0, 0.3),
-        inset 0 1px 0 rgba(255, 255, 255, 0.2);
 }
 
 .hero-content {
@@ -244,7 +241,8 @@ header h1 {
     border-bottom: dotted 1px rgba(128, 128, 128, 0.279);
 }
 
-#skills td:nth-child(2), #skills th:nth-child(2){
+#skills td:nth-child(2),
+#skills th:nth-child(2) {
     text-align: right;
 }
 
@@ -253,6 +251,7 @@ header h1 {
     font-size: 20px;
     margin: 20px;
 }
+
 #skills p {
     font-size: 18px;
     margin: 10px;
@@ -287,6 +286,7 @@ header h1 {
     cursor: pointer;
     font-family: "Roboto Mono", monospace;
 }
+
 #projects #myButton:hover {
     background-color: rgba(126, 126, 126, 0.618);
 }
@@ -299,6 +299,7 @@ header h1 {
     max-width: 1200px;
     margin: 0 auto;
 }
+
 .project-card {
     background: rgba(255, 255, 255, 0.1);
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
@@ -314,12 +315,14 @@ header h1 {
 .project-card:hover {
     transform: scale(1.05);
 }
+
 .project-card img {
     width: 100%;
     border-radius: 10px;
     margin-bottom: 15px;
     max-height: 60%
 }
+
 .project-card p {
     border-top: solid 1px rgba(128, 128, 128, 0.575);
     padding-top: 10px;
@@ -341,15 +344,19 @@ header h1 {
 /* footer */
 
 footer {
-    background:rgba(99, 129, 175, 0.226);
+    background: rgba(99, 129, 175, 0.226);
     padding: 10px 20px;
     text-align: center;
-
+    justify-content: center;
+    border-top: solid 1px rgba(128, 128, 128, 0.678);
+    display: flex;
+    flex-direction: column;
 }
 
 footer h3 {
     margin-bottom: 10px;
 }
+
 footer h2 {
     margin-bottom: 10px;
 }
@@ -363,6 +370,7 @@ footer a {
     color: #515151;
     padding: 0 10px;
 }
+
 footer a:hover {
     transform: translateY(-5px);
     transition: ease-in-out .1s;
@@ -380,7 +388,37 @@ footer svg {
     align-self: center;
 }
 
+/* footer forms */
+.email-form {
+    display: flex;
+    flex-direction: column;
+    max-width: 1000px;
+    min-width: 600px;
+    justify-content: center;
+    align-items: center;
+    align-self: center;
+}
 
+.email-form input, .email-form textarea, .email-form button {
+    padding: 10px;
+    width: 100%;
+    margin: 8px 0;
+    border-radius: 8px;
+    border: 1px solid #846868;
+    font-size: 16px;
+    font-family: "Roboto Mono", monospace;
+
+}
+.email-form button:hover {
+    cursor: pointer;
+    box-shadow: 0 4px 16px rgba(12, 3, 82, .2);
+}
+
+footer .border {
+    border-bottom: solid 1px #846868;
+    width: 80%;
+    align-self: center;
+}
 
 
 /* animations */
@@ -468,7 +506,8 @@ footer svg {
     align-items: center;
 }
 
-.letterh, .letterc {
+.letterh,
+.letterc {
     font-size: 16px;
     font-weight: 900;
     color: #333;
@@ -590,6 +629,7 @@ footer svg {
     #about h2 {
         text-align: center;
     }
+
     /* #projects #myButton {
         padding: 5px 10px;
         margin: 5px;
@@ -623,4 +663,8 @@ footer svg {
     #about img {
         width: 150px;
     }
+    .email-form {
+        min-width: 300px;
+    }
+    
 }
