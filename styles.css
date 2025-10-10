@@ -109,7 +109,8 @@ header h1 {
 }
 
 .hero-content .name-intro .order1 {
-    animation: fade-on-open 2s 3s linear forwards;
+    /* used w3schools to learn that forwards keeps the text up */
+    animation: fade-on-open 2s 3s linear forwards; 
 }
 
 .hero-content .name-intro .order2 {
@@ -323,7 +324,7 @@ header h1 {
     max-height: 60%
 }
 
-.project-card p {
+.project-card .project-title {
     border-top: solid 1px rgba(128, 128, 128, 0.575);
     padding-top: 10px;
     font-size: 18px;
@@ -341,6 +342,19 @@ header h1 {
     padding: 30px;
 }
 
+/* .tag {
+    position: relative;
+    margin: 20px 10px;
+    padding: 5px 10px;
+}
+
+.tag.html {
+    background: #e34c26;
+    color: white;
+    border-radius: 5px;
+    font-size: 14px;
+    font-weight: bold;
+} */
 /* footer */
 
 footer {
