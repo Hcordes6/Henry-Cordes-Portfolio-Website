@@ -84,7 +84,7 @@ header h1 {
     align-items: center;
     justify-content: center;
     gap: 20px;
-    min-height: 100vh;
+    min-height: 100dvh;
 }
 
 .hero-content h2 {
@@ -110,7 +110,7 @@ header h1 {
 
 .hero-content .name-intro .order1 {
     /* used w3schools to learn that forwards keeps the text up */
-    animation: fade-on-open 2s 3s linear forwards; 
+    animation: fade-on-open 2s 3s linear forwards;
 }
 
 .hero-content .name-intro .order2 {
@@ -164,6 +164,7 @@ header h1 {
     color: #515151;
     text-align: left;
     margin-top: 10px;
+    padding-bottom: 5px;
 }
 
 #about ul {
@@ -413,7 +414,9 @@ footer svg {
     align-self: center;
 }
 
-.email-form input, .email-form textarea, .email-form button {
+.email-form input,
+.email-form textarea,
+.email-form button {
     padding: 10px;
     width: 100%;
     margin: 8px 0;
@@ -423,6 +426,7 @@ footer svg {
     font-family: "Roboto Mono", monospace;
 
 }
+
 .email-form button:hover {
     cursor: pointer;
     box-shadow: 0 4px 16px rgba(12, 3, 82, .2);
@@ -648,6 +652,11 @@ footer .border {
         padding: 5px 10px;
         margin: 5px;
     } */
+
+    #about ul {
+        font-size: 20px;
+        padding-left: 0px;
+    }
 }
 
 @media (max-width: 500px) {
@@ -677,8 +686,9 @@ footer .border {
     #about img {
         width: 150px;
     }
+
     .email-form {
         min-width: 300px;
     }
-    
+
 }
